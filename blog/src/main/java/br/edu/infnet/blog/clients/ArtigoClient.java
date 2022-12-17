@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 import br.edu.infnet.blog.resources.dto.ArtigoPostsDTO;
 
-@FeignClient("artigo")
+@FeignClient("posts")
 public interface ArtigoClient {
 	
 	@GetMapping("/artigos")

@@ -14,7 +14,7 @@ public class UsuarioService {
 	
 	public Usuario getByCodigo(Long codigo) {
 		Usuario usuario = usuarioRepository.findById(codigo).get();
-		usuario.setNome(usuario.getNome() + "Instancia 2");
+		usuario.setNome(usuario.getNome());
 		return usuario;
 	}
 }

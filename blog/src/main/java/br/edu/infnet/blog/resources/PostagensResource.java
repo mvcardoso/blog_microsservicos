@@ -36,6 +36,7 @@ public class PostagensResource {
 	
 	@PostMapping
 	public PostagensResponseDTO criarPostagem(@RequestBody PostagensDTO postagensDTO) {
+		
 		log.info("SOLICITACAO PARA POSTAGEM: {}", postagensDTO);
 		
 		UsuarioDTO usuarioDTO = restTemplate.getForObject(usuarioApiUrl + postagensDTO.getUsuarioId(), UsuarioDTO.class);
